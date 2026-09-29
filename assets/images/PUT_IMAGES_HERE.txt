@@ -1,0 +1,6 @@
+Use these exact filenames:
+profile.jpg
+art-1.jpg
+art-2.jpg
+warhammer-1.jpg
+warhammer-2.jpg
