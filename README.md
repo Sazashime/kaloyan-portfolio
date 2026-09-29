@@ -1,4 +1,4 @@
-# Kaloyan Veselinov — Portfolio V2
+# Kaloyan Veselinov — Portfolio V3
 
 Bilingual English/Bulgarian portfolio.
 
@@ -30,7 +30,7 @@ Place files in `assets/images/` using these exact names:
 - `warhammer-1.jpg`
 - `warhammer-2.jpg`
 
-The site automatically shows placeholders if those images are missing.
+Creative images are optional. Existing files appear automatically. Missing image slots are hidden, and if a category has no images its gallery is hidden while the Digital Art / Warhammer text stays visible.
 
 ## Projects
 

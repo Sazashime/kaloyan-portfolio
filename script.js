@@ -15,12 +15,47 @@ document.addEventListener("DOMContentLoaded",()=>{
     if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth"})}
   }));
 
-  document.querySelectorAll(".gallery-item img").forEach(img=>{
-    img.addEventListener("error",()=>{
-      img.style.display="none";
-      const s=img.parentElement.querySelector("span");
-      if(s)s.style.display="flex";
+  // Optional creative galleries.
+  // Existing files appear automatically; missing files leave no placeholder.
+  document.querySelectorAll(".creative-card").forEach(card => {
+    const gallery = card.querySelector(".gallery");
+    if (!gallery) return;
+
+    const items = [...gallery.querySelectorAll(".gallery-item")];
+
+    const updateGalleryVisibility = () => {
+      const visibleItems = items.filter(item => item.style.display !== "none");
+      gallery.style.display = visibleItems.length ? "" : "none";
+    };
+
+    items.forEach(item => {
+      const img = item.querySelector("img");
+
+      if (!img) {
+        item.style.display = "none";
+        updateGalleryVisibility();
+        return;
+      }
+
+      const show = () => {
+        item.style.display = "";
+        updateGalleryVisibility();
+      };
+
+      const hide = () => {
+        item.style.display = "none";
+        updateGalleryVisibility();
+      };
+
+      img.addEventListener("load", show);
+      img.addEventListener("error", hide);
+
+      if (img.complete) {
+        img.naturalWidth > 0 ? show() : hide();
+      }
     });
+
+    updateGalleryVisibility();
   });
 
   const lb=document.getElementById("lightbox");
