@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded",()=>{
     trans.forEach(el=>el.textContent=el.dataset[lang]);
     document.documentElement.lang=lang==="bg"?"bg":"en";
     buttons.forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
+    document.querySelectorAll(".cv-download").forEach(link => {
+      link.href = lang === "bg"
+        ? "assets/cv/Kaloyan-Veselinov-CV-BG.pdf"
+        : "assets/cv/Kaloyan-Veselinov-CV-EN.pdf";
+    });
     localStorage.setItem("portfolio-language",lang);
   }
   buttons.forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));

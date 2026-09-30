@@ -49,3 +49,9 @@ The Genesys tool uses live YGOPRODeck card data, supports Main / Extra / Side de
 3. Connect the repo.
 4. Leave build command blank.
 5. Publish directory: `.`
+
+
+## V5
+- Corrected employment timeline: GLOBUL/Telenor, Future Senses through Apr 2024, PLASIMA 99 from Jun 2024.
+- Added bilingual CV download button that automatically follows EN/BG site language.
+- Added both updated CV PDFs under assets/cv/.
