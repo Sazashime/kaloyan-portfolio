@@ -14,3 +14,10 @@ footer{max-width:var(--max);margin:auto;padding:30px 24px 45px;border-top:1px so
 .lightbox{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex}.lightbox img{max-width:92vw;max-height:88vh;border-radius:10px}.lightbox-close{position:absolute;top:20px;right:26px;background:none;border:0;color:white;font-size:40px;cursor:pointer}
 @media(max-width:900px){.nav-links{display:none}.hero,.split{grid-template-columns:1fr;gap:40px}.hero{padding-top:75px}.portrait-card{max-width:430px}.experience-grid,.skill-groups,.creative-grid,.contact-cards{grid-template-columns:1fr}.proof{grid-template-columns:1fr}.project-head{flex-direction:column}}
 @media(max-width:560px){.section{padding:75px 18px}.nav-inner{padding:15px 18px}.hero h1{font-size:43px}.lead{font-size:17px}.project{grid-template-columns:1fr;gap:15px}.project-head h3{font-size:34px}.project-links{flex-wrap:wrap}.challenge{padding:32px 24px}.gallery{grid-template-columns:1fr}footer{padding-left:18px;padding-right:18px;gap:15px;flex-direction:column}}
+
+/* V6 — SCRAP//BOT featured project */
+.project-featured{padding-top:55px;padding-bottom:55px}
+.project-media{margin:28px 0 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#080b0f;box-shadow:0 22px 65px #0005}
+.project-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.project-featured .project-desc{max-width:920px}
+@media(max-width:560px){.project-media{margin-top:22px;border-radius:10px}}

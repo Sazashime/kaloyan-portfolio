@@ -55,3 +55,9 @@ The Genesys tool uses live YGOPRODeck card data, supports Main / Extra / Side de
 - Corrected employment timeline: GLOBUL/Telenor, Future Senses through Apr 2024, PLASIMA 99 from Jun 2024.
 - Added bilingual CV download button that automatically follows EN/BG site language.
 - Added both updated CV PDFs under assets/cv/.
+
+## V6
+- Added SCRAP//BOT as Project 03 with the supplied gameplay screenshot.
+- Added direct itch.io play link.
+- Added bilingual EN/BG project copy.
+- Retains V5 career timeline and bilingual CV downloads.
